@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stylo.css">
+    <title>Formulario de la Empresa</title>
+</head>
+<body>
+    <div id ="form">
+        <form action = "Solicitudes de trabajo" method = "post">
+            <h1>Formulario de la Empresa</h1>
+            <label for="Nombre">Nombre: </label>
+            <input type="text" id="Nombre" required>
+            
+            <label for="Email">Email: </label>
+            <input type="email" id="Email" required>
+
+            <label for="Telefono">Telefono: </label>
+            <input type="text" id="Telefono" required>
+
+            <label for="lang">Lenguajes de Programación: </label>
+            <select name="Lenguajes" id="lang">
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="C#">C#</option>
+                <option value="JavaScript">JavaScript</option>
+            </select>
+
+            <label for="Puesto">Puesto al que quiere aplicar: </label>
+            <select id="Puesto">
+                <option value="Desarrollador">Desarrollador</option>
+                <option value="Diseñador">Diseñador</option>
+                <option value="Analista">Analista</option>
+                <option value="Tester">Tester</option>
+            </select>
+
+            <label for="Mensaje">Mensaje de porque quiere el puesto:</label>
+            <textarea  id="Mensaje" rows="4" cols="50" required></textarea> 
+            <div id="boton">
+                <Button type="submit" id="Enviar">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script src="server.js" defer></script>
+</body>
+</html>
